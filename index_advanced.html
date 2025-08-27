@@ -1,0 +1,170 @@
+
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PMS Classes - Run by Guddu Sir</title>
+<style>
+    body {
+        margin: 0;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        background: #f3f8ff; /* light blue background */
+    }
+    header {
+        background: linear-gradient(90deg, #0055b3, #ffdd00); /* Bihar board colors: Blue + Yellow */
+        color: white;
+        text-align: center;
+        padding: 20px 10px;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    }
+    header h1 {
+        margin: 0;
+        font-size: 28px;
+        font-weight: bold;
+    }
+    header p {
+        margin: 5px 0 0 0;
+        font-size: 16px;
+        font-weight: 500;
+    }
+    nav {
+        display: flex;
+        justify-content: space-around;
+        background-color: #004080;
+        padding: 12px 0;
+    }
+    nav a {
+        color: white;
+        text-decoration: none;
+        font-weight: bold;
+        font-size: 14px;
+        padding: 6px 12px;
+        border-radius: 6px;
+        transition: 0.3s;
+    }
+    nav a:hover {
+        background-color: #ffdd00;
+        color: #004080;
+    }
+    .container {
+        padding: 20px;
+        max-width: 900px;
+        margin: auto;
+    }
+    section {
+        margin-bottom: 25px;
+    }
+    section h2 {
+        color: #004080;
+        margin-bottom: 15px;
+        border-bottom: 3px solid #ffdd00;
+        display: inline-block;
+        padding-bottom: 4px;
+    }
+    .card-list {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+        gap: 15px;
+    }
+    .card {
+        background: white;
+        padding: 18px;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        transition: 0.3s;
+        cursor: pointer;
+        text-align: center;
+    }
+    .card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 8px 15px rgba(0,0,0,0.2);
+    }
+    .card button {
+        background-color: #ffdd00;
+        color: #004080;
+        border: none;
+        padding: 10px 14px;
+        border-radius: 6px;
+        font-weight: bold;
+        cursor: pointer;
+        transition: 0.3s;
+    }
+    .card button:hover {
+        background-color: #004080;
+        color: #ffdd00;
+    }
+</style>
+</head>
+<body>
+
+<header>
+    <h1>PMS Classes</h1>
+    <p>Run by Guddu Sir - Class 10th Bihar Board</p>
+</header>
+
+<nav>
+    <a href="#live-test">Live Test</a>
+    <a href="#notes">Notes</a>
+    <a href="#solutions">Solutions</a>
+    <a href="#objective-vvi">Objective VVI</a>
+    <a href="#subjective">Subjective</a>
+</nav>
+
+<div class="container">
+
+    <!-- Live Test -->
+    <section id="live-test">
+        <h2>Daily Live Objective Test</h2>
+        <div class="card-list">
+            <div class="card">
+                <h3>Test Today</h3>
+                <p>Click below to start your live objective test.</p>
+                <button onclick="alert('Live Test will start soon!')">Start Test</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Notes -->
+    <section id="notes">
+        <h2>Notes</h2>
+        <div class="card-list">
+            <div class="card">Math - Chapter 1: Algebra</div>
+            <div class="card">Math - Chapter 2: Geometry</div>
+            <div class="card">Science - Chapter 1: Cell Structure</div>
+            <div class="card">Science - Chapter 2: Respiration</div>
+        </div>
+    </section>
+
+    <!-- Solutions -->
+    <section id="solutions">
+        <h2>Solutions</h2>
+        <div class="card-list">
+            <div class="card">Math - Chapter 1 Solution</div>
+            <div class="card">Math - Chapter 2 Solution</div>
+            <div class="card">Science - Chapter 1 Solution</div>
+        </div>
+    </section>
+
+    <!-- Objective VVI -->
+    <section id="objective-vvi">
+        <h2>Objective VVI</h2>
+        <div class="card-list">
+            <div class="card">Math - Chapter 1 Important Questions</div>
+            <div class="card">Science - Chapter 1 Important Questions</div>
+        </div>
+    </section>
+
+    <!-- Subjective -->
+    <section id="subjective">
+        <h2>Subjective</h2>
+        <div class="card-list">
+            <div class="card">Math - Chapter 1 Long Answer Questions</div>
+            <div class="card">Science - Chapter 1 Long Answer Questions</div>
+        </div>
+    </section>
+
+</div>
+
+</body>
+</html>
